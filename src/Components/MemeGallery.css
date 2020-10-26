@@ -1,0 +1,159 @@
+.meme-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 65vh;
+  overflow: auto;
+}
+
+.meme-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.meme-card {
+  overflow: hidden;
+  text-align: center;
+  height: 50%;
+  width: 20%;
+  position: relative;
+  margin: 0.25em 0;
+}
+
+.meme-card:hover .meme-name {
+  background-color: rgba(20, 20, 20, 1);
+}
+
+.meme-img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.meme-name {
+  width: 100%;
+  padding: 0.2em 0;
+  background-color: rgba(20, 20, 20, 0.7);
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.make-meme {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  padding: 1em;
+}
+
+.make-meme-image {
+  padding: 1em;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  text-align: center;
+  background-color: var(--contrastColor);
+  border-radius: 4px 0 0 4px;
+}
+
+.make-meme-text {
+  color: var(--contrastColor);
+  background-color: var(--accentColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  position: relative;
+  direction: rtl;
+  border-radius: 0 4px 4px 0;
+}
+
+#make-meme-text-head {
+  padding-bottom: 1em;
+  text-align: center;
+  direction: ltr;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#make-meme-text-input {
+  direction: ltr;
+  padding: 0.75em 1em;
+  width: 20vw;
+  font-size: 1em;
+  font-weight: 550;
+  outline: none;
+  border: 3px solid var(--primaryColor);
+  border-radius: 3px 3px 0 3px;
+}
+
+.make-meme-button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  background: var(--primaryColor);
+  color: var(--contrastColor);
+  transition: 0.4s all ease-in-out;
+  border-radius: 3px;
+  padding: 0.7em 1em;
+  font-size: 1em;
+  font-weight: 550;
+}
+
+#add-button {
+  border-radius: 0 0 3px 3px;
+}
+
+.make-meme-action-button {
+  direction: ltr;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+deckgo-drr {
+  position: absolute;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+text {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.75px;
+  width: 100%;
+}
+
+.test {
+  font-size: calc(parent(attr(width)*10));
+}
+
+p {
+  height: 100%;
+  width: 100%;
+  word-wrap: normal;
+}
+
+.meme-download {
+  font-size: 15px;
+}
+
+p {
+  -webkit-text-fill-color: white;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+  font-weight: bolder;
+}
+
+.meme-font-options {
+  font-weight: 700;
+  direction: ltr;
+  height: max-content;
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

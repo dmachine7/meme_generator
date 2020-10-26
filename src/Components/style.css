@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  background-color: var(--primaryColor);
+  color: var(--contrastColor);
+  font-size: 5em;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.tab-list {
+  margin: 3em 0 2em 0;
+  border-bottom: 0.25em solid var(--primaryColor);
+  padding-left: 0;
+}
+
+.tab-list-item {
+  padding: 0.5em 0.75em;
+  list-style: none;
+  display: inline-block;
+  transition: 0.2s ease-in;
+  margin-left: 1em;
+  font-size: 1.25em;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab-list-item:hover {
+  color: var(--contrastColor);
+  background-color: var(--accentColor);
+}
+
+.tab-list-active {
+  color: var(--contrastColor);
+  background-color: var(--primaryColor);
+}
+
+.upload-image {
+  background-color: var(--contrastColor);
+  text-align: center;
+  padding: 2em 0;
+}
+
+input[type="file"]{
+  display: none;
+}
+
+.upload-image-label {
+  background: linear-gradient(to right, var(--primaryColor), var(--accentColor));
+  color: var(--contrastColor);
+  transition: 0.4s all ease-in-out;
+  border-radius: 2px;
+  padding: 0.7em 1em;
+  font-size: 1em;
+}
+
+.upload-image-label:hover {
+  background: linear-gradient(to left, var(--primaryColor), var(--accentColor));
+}
