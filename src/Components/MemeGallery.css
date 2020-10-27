@@ -138,22 +138,35 @@ p {
 
 .meme-download {
   font-size: 15px;
+  color: white;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
 }
 
 p {
-  -webkit-text-fill-color: white;
   text-shadow: #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,
-             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
              #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
-  font-weight: bolder;
 }
 
-.meme-font-options {
+.meme-font-edit {
   font-weight: 700;
   direction: ltr;
   height: max-content;
   margin: 2em 0;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.meme-font-edit-option {
+  width: 100%;
+  margin: 1em 0;
+  display: flex;
   align-items: center;
+  justify-content: space-around;
 }

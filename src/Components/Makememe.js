@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import "./MemeGallery.css";
+import MemeFontEdit  from "./MemeFontEdit";
 import '@deckdeckgo/drag-resize-rotate';
 import domtoimage from 'dom-to-image';
 import {saveAs} from 'file-saver';
@@ -11,7 +12,7 @@ class Makememe extends Component {
     this.state = {
       imgurl: "",
       text: "",
-      textID: 4,
+      textID: 6,
       width: 600,
       height: 600
     };
@@ -107,21 +108,19 @@ class Makememe extends Component {
             <deckgo-drr style={this.usestyle} unit = "px"><p></p></deckgo-drr>
             <deckgo-drr style={this.usestyle} unit = "px"><p></p></deckgo-drr>
             <deckgo-drr style={this.usestyle} unit = "px"><p></p></deckgo-drr>
+            <deckgo-drr style={this.usestyle} unit = "px"><p></p></deckgo-drr>
+            <deckgo-drr style={this.usestyle} unit = "px"><p></p></deckgo-drr>
           </div>
         </div>
         <div className = "make-meme-text">
           <div id = "make-meme-text-head">Add your magic !</div>
-            <input 
-              id = "make-meme-text-input" 
-              onChange = {(e) => this.updateState(e)} 
-              placeholder = "Your text here" 
-            />
-            <button className = "make-meme-button" id = "add-button" onClick = {this.addText} >Add</button>
-          <div className = "meme-font-options">
-            <button className = "make-meme-button" onClick = {this.decreaseFont} >-</button>
-            Font Size
-            <button className = "make-meme-button" onClick = {this.increaseFont} >+</button>
-          </div>
+          <input 
+            id = "make-meme-text-input" 
+            onChange = {(e) => this.updateState(e)} 
+            placeholder = "Your text here" 
+          />
+          <button className = "make-meme-button" id = "add-button" onClick = {this.addText} >Add</button>
+          <MemeFontEdit />
           <div className = "make-meme-action-button">
             <button className = "make-meme-button" onClick = {this.resetText} >Reset</button>
             <button className = "make-meme-button" onClick = {saveMeme} >Save</button>
