@@ -26,6 +26,7 @@ class MemeGallery extends Component{
         htwratio: ratio
       }
     )
+    window.scrollTo(0,700);
   }
 
   render () {
